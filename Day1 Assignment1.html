@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Day 2 (Assignment 1)</title>
+        <h2>My First Webpage</h2>
+    </head>
+    <body>
+        <p id="day"></p>
+        <script>
+            var dayTime = new Date();
+            var weekDays = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+            document.getElementById('day').innerHTML="Today is : "+weekDays[dayTime.getDay()]+".";
+        </script>
+        <p id="time"></p>
+        <script>
+            var time = new Date();
+                hours = time.getHours();
+                mins = time.getMinutes();
+                secs = time.getSeconds();
+            document.getElementById('time').innerHTML="Current time is : "+hours+" : "+mins+" : "+secs+".";
+        </script>
+    </body>
+</html>
